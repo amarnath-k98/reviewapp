@@ -29,7 +29,7 @@ const MovieDetails = () => {
 
   if (loading)
     return (
-      <div className="min-h-screen bg-black p-6 text-center text-gray-500">
+      <div className="w-full min-h-screen bg-black p-6 text-center text-gray-500">
         Loading movie details...
       </div>
     );
@@ -37,7 +37,7 @@ const MovieDetails = () => {
     return <div className="p-6 bg-black text-center text-red-500">Movie not found.</div>;
 
   return (
-    <div className="min-h-screen bg-black text-gray-500">
+    <div className="w-full min-h-screen bg-black flex items-center text-gray-500">
       <div className="p-6 max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row gap-6">
           <img
